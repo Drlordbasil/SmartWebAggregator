@@ -24,7 +24,8 @@ class UserInterface:
                 content_analyzer = ContentAnalyzer(cleaned_data)
                 categorized_content = content_analyzer.analyze_content()
                 analyzer = Analyzer()
-                analyzed_content = analyzer.analyze_content(categorized_content)
+                analyzed_content = analyzer.analyze_content(
+                    categorized_content)
                 result_collector = ResultCollector(analyzed_content)
                 result_collector.collect_results()
 
